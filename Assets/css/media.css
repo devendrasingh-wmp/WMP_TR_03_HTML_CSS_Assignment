@@ -1,0 +1,458 @@
+/* handle the nav bar  */
+@import url('./style.css');
+@media screen and (max-width:500px){
+    #nav-header{
+        padding: 1rem;
+    }
+}   
+@media screen and (max-width:1400px){
+    .nav-menu a{
+        display: none;
+    }
+    .nav-auth button{
+        display: none;
+    }
+      #toggle-btn{
+            display: block;
+            font-size: 1.5rem;
+            font-family:var(--ft-fmly) ;
+            background-color:var(--ft-white);
+            color:var(--ft-blue);
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+        }
+}
+
+
+/* Hide the nav menu by default on smaller screens */
+@media screen and (max-width: 1400px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column; 
+        background-color: orange;
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        z-index: 1000; 
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+ 
+}
+@media screen and (max-width:800px){
+    .login{
+
+        margin:1rem;
+        padding: 1rem;
+    }
+    .nav-signup{
+        padding: 1rem;
+        width: 90%;
+        margin: 0rem 1rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+   
+  #nav-toggle{
+    display: none;
+  }
+}
+/* handle home  */
+
+@media screen and (max-width:1400px){
+    .home-content-heading>h1{
+        font-size: 3.7rem;
+    }
+    .home-content-para{
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+    
+}
+@media screen and (max-width:800px){
+    .home-content-heading>h1{
+        font-size: 3rem;
+    }
+    .home-content-para{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .signup{
+        padding: 1.8rem 2.2rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:460px){
+    .home-content-heading>h1{
+        font-size: 2.8rem;
+    }
+    .home-content-para{
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    .signup{
+        padding: 1.2rem 1.8rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+    .home-content-icons{
+
+        padding: 2rem 0rem;
+    }
+    .home-content-icons img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .view-demo{
+        font-size: 1.2rem;
+        font-weight: var(--ft-wt1);
+        padding: 2rem;
+    }
+    .home{
+        padding: 1.5rem;
+    }
+}
+
+
+
+ 
+/* handleDesktop */
+
+@media screen and (max-width:1400px){
+    #desk-head{
+        font-size: 2.2rem;
+    }
+    #desk-para{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:600px){
+    #desk-head{
+        font-size: 2rem;
+    }
+    #desk-para{
+        font-size: 1.4rem;
+    }
+
+}
+@media screen and (max-width:450px){
+    #desk-head{
+        font-size: 1.7rem;
+    }
+    #desk-para{
+        font-size: 1.2rem;
+    }
+}
+/* card handling */
+@media screen and (max-width:1200px){
+    .card{
+      padding: 3rem 1rem;
+    }
+    .card-card1{
+      min-width: 280px;
+    }
+    .card-card1 p{
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+  }
+  .card-header>h1{
+      font-size: 2.5rem;
+  }
+  .card-profile h3{
+        font-size: 1rem;
+  }
+  .card-profile>div>p{
+        font-size: 1rem;
+  }
+  }
+@media screen and (max-width:800px){
+  .card{
+    padding: 3rem 1rem;
+  }
+  .card-card1{
+    min-width: 280px;
+  }
+  .card-card1 p{
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+}
+.card-header>h1{
+    font-size: 2rem;
+}
+.backward,.forward{
+    height: 3rem;
+    width: 3rem;
+}
+
+}
+@media screen and (max-width:400px){
+    .card{
+      padding: 3rem 0.5rem;
+    }
+    .card-card1{
+      min-width: 250px;
+    }
+    .card-card1 p{
+      font-size: 1.5rem;
+  }
+  .card-header>h1{
+    font-size: 1.5rem;
+}
+.backward,.forward{
+    height:2.5rem;
+    width: 2.5rem;
+}
+
+  }
+
+/* handle join page */
+@media screen and (max-width:1400px){
+    .join-content-heading{
+        font-size: 2.2rem;
+    }
+    .join-content-para{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:600px){
+    .join-content-heading{
+        font-size: 1.8rem;
+    }
+    .join-content-para{
+        font-size: 1.2rem;
+    }
+}
+/* Footer handling */
+@media screen and (max-width:1400px){
+    .footer-div{
+        flex: 20%;
+         margin: 3rem;
+    }
+    .footer-div a{
+        font-size: 1.5rem;
+    }
+    .copyright{
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .copyright div{
+        text-align: center;
+    }
+}
+@media screen and (max-width:969px){
+    .footer-div{
+        flex: 30%;
+         margin: 3rem;
+    }
+    .footer-div a{
+        font-size: 1.5rem;
+    }
+    .copyright{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .currency{
+        flex:50%;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:597px){
+  
+    .currency{
+        flex:80%;
+    }
+}
+
+/* home page media query start*/
+@media screen and (max-width:1875px) {
+    .home-image{
+        height: 50rem;
+    }
+    .home-image>div>img{
+        width: 16vw
+    }
+    .chat{
+        top: 10%;
+        left: 23%;
+        width: 30%;
+    }
+    .mobile-lady{
+        top: 0rem;
+        left: 50%;
+        width: 30%;
+    }
+    .laptop-lady{
+        width: 30%;
+        bottom: 0;
+    }
+    .home-content-icons{
+        padding: 4rem 0rem;
+    }
+    .home-content-icons{
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons-image {
+        bottom:0rem;
+        left: 45%;
+        width: 16%;
+    }
+    
+}
+@media screen and (max-width:1745px) {
+    .home-image{
+        height: 45rem;
+    }
+    .home-image>div>img{
+        width: 16vw
+    }
+    .chat{
+        top: 12%;
+        left: 23%;
+        width: 30%;
+    }
+    .mobile-lady{
+        top: 0rem;
+        left: 50%;
+        width: 30%;
+    }
+    .laptop-lady{
+        width: 30%;
+        bottom: 0;
+    }
+    .home-content-icons{
+        padding: 4rem 0rem;
+    }
+    .home-content-icons{
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons-image {
+        bottom:0rem;
+        left: 45%;
+        width: 16%;
+    }
+    
+}
+@media screen and (max-width:1400px) {
+    .home-image{
+        height: 39rem;
+    }
+    .home-image>div>img{
+        width: 15vw
+    }
+    .chat{
+        top: 23%;
+        left: 23%;
+        width: 30%;
+    }
+    .mobile-lady{
+        top: 0rem;
+        left: 50%;
+        width: 30%;
+    }
+    .laptop-lady{
+        width: 30%;
+        bottom: 0;
+    }
+    .home-content-icons{
+        padding: 4rem 0rem;
+    }
+    .home-content-icons{
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons-image {
+        bottom:0rem;
+        left: 45%;
+        width: 16%;
+    }
+    
+}
+@media screen and (max-width:1133px) {
+    .home{
+        flex-direction: column;
+    }
+    .home-image{
+        height: 39rem;
+    }
+    .home-image>div>img{
+        width: 25vw
+    }
+    .chat{
+        top: 20%;
+        left: 29%;
+        width: 30%;
+    }
+    .mobile-lady{
+        top: 0rem;
+        left: 60%;
+        width: 30%;
+    }
+    .laptop-lady{
+        width: 30%;
+        bottom: 0;
+    }
+    .home-content-icons{
+        padding: 4rem 0rem;
+    }
+    .home-content-icons{
+        height: 3rem;
+        width: 3rem;
+    }
+    .icons-image {
+        bottom:0rem;
+        left: 54%;
+        width: 16%;
+    }
+    
+}
+@media screen and (max-width:949px) {
+    .home-image{
+        height: 32rem;
+    }
+    
+}
+@media screen and (max-width:761px) {
+    .home-image{
+        height: 28rem;
+    }
+    
+}
+@media screen and (max-width:615px) {
+    .home-image{
+        height: 24rem;
+    }
+    
+}
+@media screen and (max-width:454px) {
+    .home-image{
+        height: 17rem;
+    }
+    .home-image>div>img{
+        width: 30vw
+    }
+    
+}
+@media screen and (max-width:454px) {
+    .home-image{
+        height: 17rem;
+    }
+    .home-image>div>img{
+        width: 30vw
+    }
+    
+}
+
+/* home page media query end*/

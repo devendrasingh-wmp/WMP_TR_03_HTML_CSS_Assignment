@@ -1,0 +1,22 @@
+:root {
+    --ck: 2px solid red;
+
+    /* color */
+    --ft-blue: #0F172A;
+    --signup-btn: hsl(21, 90%, 48%);
+    --ft-white:white;
+    --ft-demo: #2563EB;
+    --desktop-bg: #F1F5F9;
+    --bg-yellow:#FACC15;
+    --footer-bg: #0F172A;
+
+    /* font weight */
+    --ft-wt1: 900;
+    --ft-wt2: 400;
+
+    /* font family */
+    --ft-fmly: Roboto;
+
+    /* common padding  */
+    --cp:4rem 6rem;
+}
